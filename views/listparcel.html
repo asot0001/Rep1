@@ -1,0 +1,72 @@
+<html>
+<head>
+  <img src="download.png">
+<style>
+body {
+  background-image: url('https://i.nextmedia.com.au/News/crn-14_australia_post_auspost_iStock-486375902_(1).jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<h2>List of Parcels</h2>
+
+
+  
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #38809f;
+        }
+        </style>
+        </head>
+        <body>
+        
+       
+        
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Sender</th>
+            <th>Address</th>
+            <th>Weight</th>
+            <th>Height</th>
+            <th>Is fragile?</th>
+          </tr>
+          <% for ( let i =0; i< parcel.length;i++){ %>
+          <tr>
+            <td> <%= parcel[i]._id %>  </td>
+            <td> <%= parcel[i].sender %>  </td>
+            <td> <%= parcel[i].address %></td>
+            <td> <%= parcel[i].weight %> </td>
+            <td> <%= parcel[i].height %> </td>
+            <td> <%= parcel[i].fragile %></td>
+
+          </tr>
+          <% }%>
+        </table>
+
+
+
+        <li><a href= "addparcel">Add Parcel</a></li>
+        <li><a href="listparcel">List Parcels</a></li>
+        <li><a href="delete">Delete Parcel</a></li>
+        <li><a href="update">Update</a></li>
+        <li><a href="deleteboth">Delete by sender and weight</a></li>
+
+</body>
+</html>

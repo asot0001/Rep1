@@ -1,0 +1,79 @@
+<html>
+<head>
+  <img src="log.png"> <link rel="stylesheet" href="style.css">
+<style>
+body {
+  background-image: url('https://i.nextmedia.com.au/News/crn-14_australia_post_auspost_iStock-486375902_(1).jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<h2>New Parcel</h2>
+
+<form action="/data" method="POST">
+  
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #ffffffcb;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #328893;
+        }
+        </style>
+        </head>
+        <body>
+        
+       
+        
+        <table>
+          <tr>
+            <th>Sender</th>
+            <th>Address</th>
+            <th>Weight</th>
+            <th>Height</th>
+            <th>Is fragile?</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="sender" /> </br></td>
+            <td><input type="text" name="address" /> </br></td>
+            <td><input type="text" name="weight" /> </br></td>
+            <td><input type="text" name="height" /> </br></td>
+            <td><label for="fragile"></label>
+                <select name="fragile" id="fragile">
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+                 
+                </select> </br></td>
+          </tr>
+         
+        </table>
+
+       
+       
+          <input type="submit"/>
+       
+        
+
+</form>
+
+<li><a href= "addparcel">Add Parcel</a></li>
+<li><a href="listparcel">List Parcels</a></li>
+<li><a href="delete">Delete Parcel</a></li>
+<li><a href="update">Update</a></li>
+<li><a href="deleteboth">Delete by sender and weight</a></li>
+
+</body>
+</html>
