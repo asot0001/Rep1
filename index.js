@@ -20,7 +20,7 @@ app.listen(8081);
 
 const MongoClient = mongodb.MongoClient;
 // Connection URL
-const url = "mongodb://localhost:27017/";
+const url = "mongodb://0.0.0.0:27017/";
 //reference to the database (i.e. collection)
 let db;
 //Connect to mongoDB server
